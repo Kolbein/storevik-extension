@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Storevik kommune til toppen",
+  "version": "1.0.0",
+  "description": "Flytter 'Storevik kommune' til toppen av organisasjonslisten på Fiks-forvaltning.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://forvaltning.fiks.dev.ks.no/fiks-konfigurasjon/velg-organisasjon",
+        "https://forvaltning.fiks.test.ks.no/fiks-konfigurasjon/velg-organisasjon"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
