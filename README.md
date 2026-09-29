@@ -1,8 +1,7 @@
 # Storevik kommune til toppen 🚀
 
 En liten nettleserutvidelse (Chrome/Edge/Brave, Manifest V3) som flytter "Storevik kommune"
-til toppen av organisasjonslisten på Fiks-forvaltning, slik at man slipper å scrolle
-for å finne den.
+til toppen av organisasjonslisten på Fiks-forvaltning, slik at man slipper å scrolle eller <kbd>CTRL</kbd>/<kbd>Cmd</kbd> + <kbd>F</kbd> for å finne den.
 
 ![Storevik kommune flyttet til toppen av organisasjonslisten](image.png)
 
