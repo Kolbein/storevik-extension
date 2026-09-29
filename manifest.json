@@ -6,8 +6,8 @@
   "content_scripts": [
     {
       "matches": [
-        "https://forvaltning.fiks.dev.ks.no/fiks-konfigurasjon/velg-organisasjon",
-        "https://forvaltning.fiks.test.ks.no/fiks-konfigurasjon/velg-organisasjon"
+        "https://forvaltning.fiks.dev.ks.no/*",
+        "https://forvaltning.fiks.test.ks.no/*"
       ],
       "js": ["content.js"],
       "run_at": "document_idle"

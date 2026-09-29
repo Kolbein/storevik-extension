@@ -2,8 +2,17 @@
 // slik at man slipper å scrolle for å finne det. Lista lastes inn dynamisk (Angular).
 
 const TARGET_TEXT = "Storevik kommune";
+const ORG_LIST_PATH = "/fiks-konfigurasjon/velg-organisasjon";
+
+function isOrgListPage() {
+  return location.pathname === ORG_LIST_PATH;
+}
 
 function moveStorevikToTop() {
+  if (!isOrgListPage()) {
+    return;
+  }
+
   const cards = document.querySelectorAll("li[ksd-card]");
 
   for (const li of cards) {
