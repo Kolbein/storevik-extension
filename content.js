@@ -3,9 +3,14 @@
 
 const TARGET_TEXT = "Storevik kommune";
 const ORG_LIST_PATH = "/fiks-konfigurasjon/velg-organisasjon";
+// Feature branch-miljøer legger til en "/branch/<navn>"-prefiks foran den vanlige stien,
+// f.eks. /branch/featurebes-db44/fiks-konfigurasjon/velg-organisasjon.
+const ORG_LIST_PATH_REGEX = new RegExp(
+  `^(/branch/[^/]+)?${ORG_LIST_PATH}$`
+);
 
 function isOrgListPage() {
-  return location.pathname === ORG_LIST_PATH;
+  return ORG_LIST_PATH_REGEX.test(location.pathname);
 }
 
 function moveStorevikToTop() {
